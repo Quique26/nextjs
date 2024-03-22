@@ -1,7 +1,7 @@
-export default async function PostsLayout ({ children }) {
+export default function Layout ({ children }) {
     return (
         <div>
-            <small>Home &bull; Posts</small>
+            <small style={{ background: "#fff", color: "purple"}}>El mejor canal de Twitch de programacion: @midudev</small>
             {children}
         </div>
     )

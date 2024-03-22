@@ -1,12 +1,13 @@
 const fecthComments = async (id) => {
-    await new Promise(resolve => setTimeout(resolve, 3000))
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    throw new Error("Error al cargar los comentarios") 
 
-    return fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`, { 
+    /* return fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`, { 
         next: {
             revalidate: 60
         }
     })
-        .then(res => res.json())
+        .then(res => res.json()) */
 }
 
 export default async function Post ({ params }) {
